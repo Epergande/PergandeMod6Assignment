@@ -8,7 +8,7 @@ function getInput() {
 function showFilteredResults() {
     const input = getInput();
     const option = selectEl.value;
-    let results = defaultMembers;
+    let results = loadMembers();
 
     if (input) {
         results = results.filter(member => {

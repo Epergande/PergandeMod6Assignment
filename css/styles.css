@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #67366e;
+    --secondary-color: #d1ce0f;
+    --accent-color: #F5EFED;
+    --link-color: #598392;
+}
+
+main {
+    flex-grow: 1;
+}
+
+body {
+    background-color: var(--accent-color);
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page-title {
+    color: var(--primary-color);
+}
+
+.membership-info {
+    color: var(--primary-color);
+    font-size: 1.25em;
+}
+
+.yellow-bar {
+    background-color: var(--secondary-color);
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 300px;
+    cursor: text;
+}
+
+.filter-by {
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+#footer {
+    background-color: var(--primary-color);
+    margin-top: auto;
+    text-align: center;
+    color: var(--secondary-color);
+}

@@ -1,7 +1,12 @@
+let modifyTableHeader = document.getElementById("table-popover");
+modifyTableHeader.classList.add("hidden");
 
 
-    let tableHeader = document.getElementById("table-popover");
-    tableHeader.classList.add("hidden");
+const rows = document.querySelectorAll('.popover-btn-row');
+rows.forEach(btn => btn.classList.add('hidden'));
 
-    const rows = document.querySelectorAll('.member-table-row');
-    rows.forEach(row => row.classList.add('hidden'));
+
+let tableHeaders = document.querySelectorAll('th');
+tableHeaders.forEach(header => {
+    header.classList.remove("clickable");
+});

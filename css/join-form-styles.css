@@ -1,0 +1,49 @@
+form {
+    max-width: 300px;
+    color: black;
+    text-align: left;
+    margin: 1em auto;
+    background-color: white;
+    padding: 32px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form label {
+    font-size: 1em;
+}
+
+form input {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 1em;
+    color: var(--primary-color);
+    outline-color: var(--primary-color);
+    cursor: pointer;
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    text-align: center;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: #8c7293;
+    transition: 0.4s;
+
+}

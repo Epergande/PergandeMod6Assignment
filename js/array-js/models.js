@@ -7,19 +7,4 @@ function Member(userName, firstName, lastName, enrolmentDate, cancellationDate, 
     this.cancellationDate = cancellationDate;
     this.poolAccess = poolAccess;
     this.spaAccess = spaAccess;
-
-    if (this.cancellationDate === null) {
-        this.cancellationDate = "N/A";
-    }
-    if (this.poolAccess) {
-        this.poolAccess = "✅";
-    } else {
-        this.poolAccess = "❌";
-    }
-    if (this.spaAccess) {
-        this.spaAccess = "✅";
-    } else {
-        this.spaAccess = "❌";
-    }
-
 }

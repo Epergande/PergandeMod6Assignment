@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Satellite Fitness | Join The Orbit</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav-styles.css">
+    <link rel="stylesheet" href="css/join-form-styles.css">
 </head>
+<section>
+    <!--    nav generated with javascript-->
+</section>
 <body>
-$END$
+<h1 class="page-title">Join The Orbit</h1>
+<p class="yellow-bar membership-info">Become a member today and gain access to exclusive benefits, personalized training
+    plans, and a supportive community
+    that will help you achieve your fitness goals.</p>
+<form id="join-form" class="white-box">
+    <label>
+        First Name
+        <input type="text" id="first-name" placeholder="John" required>
+    </label>
+    <label>
+        Last Name
+        <input type="text" id="last-name" placeholder="Smith" required>
+    </label>
+    <label>
+        Username
+        <input type="text" id="username" placeholder="12jSmith" required>
+    </label>
+    <label>
+        Enrollment Date
+        <input type="date" id="enrollment-date" required>
+    </label>
+    <label for="cancel-date">
+        Cancellation Date (if applicable)
+        <input type="date" id="cancel-date">
+    </label>
+    <label for="pool-access">
+        <input type="checkbox" id="pool-access">
+        Pool Access
+    </label>
+    <label for="spa-access">
+        <input type="checkbox" id="spa-access">
+        Spa Access
+    </label>
+    <br>
+    <button type="submit" class="button">Add Member</button>
+</form>
+<div id="footer">
+    <!--    footer generated with javascript-->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/array-js/generate-Id.js"></script>
+<script src="js/array-js/models.js"></script>
+<script src="js/array-js/data.js"></script>
+<script src="js/array-js/load-data.js"></script>
+<script src="js/display-data-js/table-generator.js"></script>
+<script src="js/configure-data-js/add-data.js"></script>
+<script src="js/configure-data-js/regex-input-validation.js"></script>
+<script src="js/innerHTML-js/nav.js"></script>
+<script src="js/innerHTML-js/footer.js"></script>
 </body>
 </html>

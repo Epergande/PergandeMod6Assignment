@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Satellite Fitness | Modify</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav-styles.css">
+    <link rel="stylesheet" href="css/table-styles.css">
 </head>
+<section>
+    <!--    nav generated with javascript-->
+</section>
 <body>
-$END$
+<h1 class="page-title">Modify Members</h1>
+<form class="yellow-bar">
+    <label>
+        <select class="filter-by">
+            <option value="by-name" selected>Search by Name</option>
+            <option value="by-id">Search by ID</option>
+            <option value="by-username">Search by Username</option>
+        </select>
+    </label>
+    <label>
+        <input type="text" class="search-bar" id="search-bar" placeholder="Find Member">
+    </label>
+    <div>Click on a header to sort results</div>
+
+    <!--    Popover Start-->
+    <div popover id="delete-edit-popover">Edit or Delete?
+        <br>
+        <button type="button" class="popover-btns" id="edit-data-btn">Edit</button>
+        <button type="button" class="popover-btns" id="delete-data-btn">Delete</button>
+        <br>
+        (Press esc to exit)
+    </div>
+</form>
+<!--    popover end-->
+
+
+<div>
+    <table id="members-table" class="table">
+        <!--table data generated with javascript-->
+    </table>
+</div>
+<div id="footer">
+    <!--    footer generated with javascript-->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/array-js/generate-Id.js"></script>
+<script src="js/array-js/models.js"></script>
+<script src="js/array-js/data.js"></script>
+<script src="js/array-js/load-data.js"></script>
+<script src="js/display-data-js/table-generator.js"></script>
+<script src="js/display-data-js/sort-data.js"></script>
+<script src="js/display-data-js/search-bar.js"></script>
+<script src="js/innerHTML-js/footer.js"></script>
+<script src="js/innerHTML-js/nav.js"></script>
+<script src="js/configure-data-js/delete-data.js"></script>
+<script src="js/configure-data-js/edit-data.js"></script>
 </body>
 </html>

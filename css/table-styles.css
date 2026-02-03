@@ -2,7 +2,7 @@ table.table {
     width: 100%;
     border-collapse: collapse;
     max-width: 1000px;
-    margin: 20px auto ;
+    margin: 20px auto;
 }
 
 table.table tr:first-of-type th {
@@ -12,15 +12,14 @@ table.table tr:first-of-type th {
 }
 
 table.table tr:not(:first-of-type):nth-of-type(2n) {
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .5);
 }
 
 table.table tr:not(:first-of-type):nth-of-type(2n + 1) {
-    background-color: rgba(255,255,255,.25);
+    background-color: rgba(255, 255, 255, .25);
 }
 
 table.table tr:not(:first-of-type):hover {
-    background-color: var(--accent-color);
     color: var(--secondary-color);
 
 }
@@ -34,8 +33,75 @@ table.table td.center {
 }
 
 table.table td:not(:last-of-type) {
-    border-right: 1px solid rgba(255,255,255,1)
+    border-right: 1px solid rgba(255, 255, 255, 1)
 }
+
 .clickable {
     cursor: pointer !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.open-popover-btn {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 40px;
+}
+
+.open-popover-btn:hover {
+    background-color: #8c7293;
+    transition: 0.4s;
+}
+
+:popover-open {
+    width: 200px;
+    height: 75px;
+    inset: 400px 0 auto auto;
+    bottom: 5px;
+    right: 5px;
+    margin: 0;
+    border: var(--primary-color) 2px solid;
+}
+
+.popover-btns {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1px;
+}
+.save-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 5px 40px;
+    border: none;
+}
+
+.save-button:hover {
+    background-color: #8c7293;
+    transition: 0.4s;
+
+}
+form label {
+    font-size: 1em;
+}
+
+form input {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 1em;
+    color: var(--primary-color);
+    outline-color: var(--primary-color);
+    cursor: pointer;
+
 }
