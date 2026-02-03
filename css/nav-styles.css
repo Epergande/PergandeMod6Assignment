@@ -1,0 +1,42 @@
+img {
+    height: auto;
+    width: 75px;
+    padding: 5px;
+    margin: 0 10px 0 5px;
+    border-radius: 15%;
+}
+
+section > nav > div > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+
+}
+
+section > nav > div > ul li {
+    float: left;
+}
+
+
+
+section > nav > div > ul li a {
+    display: block;
+    color: var(--secondary-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-list {
+    padding: 16px;
+    margin: 16px 5px;
+
+}
+
+.nav-list:hover {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+
